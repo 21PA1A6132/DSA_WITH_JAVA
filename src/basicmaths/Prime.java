@@ -35,7 +35,7 @@ public class Prime {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int N = sc.nextInt();
-        if(isPrime(N)){
+        if(isPrime2(N)){
             System.out.println("The Given number " + N + " is prime");
         }
         else{
