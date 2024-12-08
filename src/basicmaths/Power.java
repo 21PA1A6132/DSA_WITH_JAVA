@@ -4,14 +4,14 @@ import java.util.*;
 public class Power {
     public static double pow(int x, int y) {
         if (y == 0) {
-            return 1; // Base case: Any number to the power of 0 is 1
+            return 1;
         }
-        if (x == 0) {
-            return 0; // Any power of 0 (except 0^0) is 0
+        if (x == 0 || x==1 || y==1) {
+            return x;
         }
 
         double result = 1;
-        int exponent = Math.abs(y); // Handle negative exponents
+        int exponent = Math.abs(y);
         while (exponent > 0) {
             if (exponent % 2 == 1) { // If the current exponent is odd
                 result *= x;
