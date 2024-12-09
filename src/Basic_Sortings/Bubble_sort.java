@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Bubble_sort {
     public static void bub_sort(ArrayList<Integer> arr,int n){
-        for(int i=n-1;i>=0;i--){
+        for(int i=n-1;i>0;i--){
             boolean did_swap = false;
             for(int j=0;j<=i-1;j++){
                 if(arr.get(j)>arr.get(j+1)){
