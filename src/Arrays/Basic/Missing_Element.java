@@ -33,12 +33,12 @@ public class Missing_Element {
         return -1;
     }
     static int miss_ele_best(int[]arr,int n){
-        int sum1 = (n*(n+1))/2;
-        int sum2=0;
+        int sum_n = (n*(n+1))/2;
+        int sum_arr=0;
         for(int x:arr){
-            sum2+=x;
+            sum_arr+=x;
         }
-        return sum1-sum2;
+        return sum_n-sum_arr;
     }
     static int miss_ele(int[]arr,int n){
         int xor1 =0;
