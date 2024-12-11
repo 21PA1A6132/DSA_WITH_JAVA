@@ -6,14 +6,14 @@ import java.util.Scanner;
 public class Missing_Element {
     static int miss_ele_brute(int[] arr, int n){
         for(int i =1;i<n;i++){
-            int flag=0;
+            boolean flag=true;
             for(int j=0;j<n;j++){
                 if(arr[j]==i){
-                    flag=1;
+                    flag=false;
                     break;
                 }
             }
-            if(flag==0){
+            if(flag){
                 return i;
             }
 
