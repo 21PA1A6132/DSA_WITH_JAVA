@@ -44,10 +44,10 @@ public class Missing_Element {
         int xor1 =0;
         int xor2 =0;
         for(int i =0;i<n-1;i++){
-            xor1 ^=arr[i]; //(xor of all elements in the array upto n-1th index) ex : [1,2,3,5] xor1 = 1^2^3^4
-            xor2 ^=i+1; //(xor of elements 1 to n-1) --> xor2 = 1^2^3
+            xor2 ^=arr[i]; //(xor of all elements in the array upto n-1th index) ex : [1,2,3,5] xor1 = 1^2^3^4
+            xor1 ^=i+1; //(xor of elements 1 to n-1) --> xor2 = 1^2^3
         }
-        xor2 ^=n;
+        xor1 ^=n;
         return xor1^xor2;
     }
     public static void main(String[] args) {
